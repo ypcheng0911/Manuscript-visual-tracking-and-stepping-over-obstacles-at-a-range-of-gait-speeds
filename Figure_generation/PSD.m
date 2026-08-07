@@ -9,14 +9,10 @@ clc
 %% Load data & create save folder
 [ALLEEG, EEG, CURRENTSET, ALLCOM] = eeglab;
 
-filepath = 'G:\Nordin_lab_data\Processed_data\Obstacle_avoidance\wBaselineAMIVA_copy';
-% filename = 'RV15.study';
-% filename = 'RV15_new.study';
+filepath = <path_to_processed_data>;
 filename = 'RV15_new_final.study';
 
-% savepath = fullfile(filepath,'result_fig_fooofPSD_Mar2026');
-% savepath = fullfile(filepath,'result_fig_fooofPSD_holmbonf_Mar2026');
-savepath = fullfile(filepath,'result_fig_fooofPSD_fdr_Mar2026');
+savepath = fullfile(filepath,'savepath');
 mkdir(savepath)
 cd(savepath)
 
@@ -643,11 +639,7 @@ for c = tar_clus  % [3 4 5 9 12 17] %
     ALL_warped_ersp{c} = WARPED_ersp;
 
     WARPED_ersp = WARPED_ersp'; % for RV15.study
-    %======================= Significance (developing 03/13/2025)
-    % [pcond,pgroup,pinter] = std_stat(WARPED_ersp,'groupstats','on','condstats','on','paired',{'on','on','on'});
-    % [pcond,pgroup,pinter] = std_stat(WARPED_ersp,'method','permutation','naccu',2000,'groupstats','on','condstats','on','paired',{'on','on','on'});
     
-
     [m,n] = size(WARPED_ersp);
     %-- calculates CI for ERSP
     if strcmp(sig_mask,'y')
@@ -842,7 +834,6 @@ for c = tar_clus  % [3 4 5 9 12 17] %
     close all
 end
 close all
-%^^^ Added timewarp function ( 03/09/2025) ^^^
 
 %% Save as a PPT
 
