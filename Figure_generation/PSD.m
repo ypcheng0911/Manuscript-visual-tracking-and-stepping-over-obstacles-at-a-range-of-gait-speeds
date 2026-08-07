@@ -9,7 +9,7 @@ clc
 %% Load data & create save folder
 [ALLEEG, EEG, CURRENTSET, ALLCOM] = eeglab;
 
-filepath = <path_to_processed_data>;
+filepath = '<path_to_processed_data>';
 filename = 'RV15_new_final.study';
 
 savepath = fullfile(filepath,'savepath');
