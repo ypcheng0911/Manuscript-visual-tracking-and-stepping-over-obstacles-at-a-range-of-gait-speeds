@@ -6,7 +6,7 @@ subjects = ["D03","D04","D05","D06","D07","D08","D09","D10_obstacle_avoidance","
 
 for subj in subjects:
     # Retrive all video paths
-    path = "E:\\Nordin_lab_data\\Raw_data\\Obstacle Avoidance Study raw data\\Eye tracking raw data\\"+ subj +"\\Data\\Media"
+    path = "<path_to_raw_data>\\"+ subj +"\\Data\\Media"
     path_len = len(path)
     file_names = []
     video_paths = []
@@ -14,7 +14,7 @@ for subj in subjects:
         video_paths.append(files)
         file_names.append(files[path_len+1:])
 
-    save_path = "E:\\Nordin_lab_data\\Processed_data\\Obstacle_avoidance\\Eye_tracking_videos\\" + subj
+    save_path = "<path_to_processed_data>\\" + subj
     # Iterate through all videos
     n = 0
     for cur_video in video_paths:
