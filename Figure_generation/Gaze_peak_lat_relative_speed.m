@@ -1,5 +1,5 @@
 
-load('G:\Nordin_lab_data\Processed_data\Obstacle_avoidance\Eye_tracking_videos\Data_alignment.mat')
+load('<path_to_processed_data>\Data_alignment.mat')
 SUBJ_list = {'D01','D02','D03','D04','D06','D08','D09','D10',...
     'N01','N03','N04','N05','N06','N07','N08','N09','N10'};  % N02
 object_class = {'Background','Path','Obstacle'};
@@ -38,7 +38,7 @@ rel_sp = [0.75 1 1.25 1.25*0.75 1.25 1.25*1.25 1.5*0.75 1.5 1.5*1.25];
 [s_rel_sp,s_idx] = sort(rel_sp);
 
 % 
-uiopen('G:\Nordin_lab_data\Processed_data\Obstacle_avoidance\Eye_tracking_videos\ALL_exceptN02_path.fig',1)
+uiopen('<path_to_processed_data>\ALL_exceptN02_path.fig',1)
 h = gcf;
 for i=1:9; Ydata(i,:) = h.Children(i).Children(2).YData; end
 for i=1:9; Xdata(i,:) = h.Children(i).Children(2).XData; end
