@@ -532,7 +532,6 @@ clearvars ersp_ge_pnt ersp_freq_pnt GE_t ERSP_GE_pnt
 for subj = 1:length(subjs)
     for cond = 1:length(cond_txt)
         for gp = 1:length(group_txt)
-            % eval(sprintf(' EEG = pop_loadset(''filename'',''S01_TM_%s_PCA_CCA_AMICA_DIPFIT_epoch.set'',''filepath'',''D:\\ARL_data\\Processed\\STUDY_pcacca\\epoch\\''); ',cond_txt{cond}))
             EEG = eeg_retrieve(ALLEEG,find(strcmp({ALLEEG(:).subject},subjs{subj}) & strcmp({ALLEEG(:).condition},cond_txt(cond)) ...
                 & strcmp({ALLEEG(:).group},group_txt(gp))));
 
