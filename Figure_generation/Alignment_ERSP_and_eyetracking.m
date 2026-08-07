@@ -2,7 +2,7 @@ clear
 close all
 clc
 
-filepath = 'G:\Nordin_lab_data\Processed_data\Obstacle_avoidance\wBaselineAMICA_obloc_copy';
+filepath = '<path_to_processed_data>';
 filename = 'RV15_new_final.study';
 
 %-- Load study
@@ -21,7 +21,7 @@ mkdir(fig_saving_file)
 cd(fig_saving_file)
 
 
-load('G:\Nordin_lab_data\Processed_data\Obstacle_avoidance\Eye_tracking_videos\Data_alignment.mat')
+load('<path_to_processed_data>\Data_alignment.mat')
 SUBJ_list = {'D01','D02','D03','D04','D06','D08','D09','D10',...
     'N01','N03','N04','N05','N06','N07','N08','N09','N10'};  % N02
 object_class = {'Background','Path','Obstacle'};
