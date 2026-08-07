@@ -2,7 +2,7 @@ clear all
 clc
 close all
 
-cd('E:\Nordin_lab_data\Processed_data\Obstacle_avoidance\Eye_tracking_videos\All_vars')
+cd('<path_to_processed_data>\Eye_tracking_videos\All_vars')
 
 subj_list = {'N02', 'N05'};
 % subj_list = {'N06','N07','N08','N09','N10'...
