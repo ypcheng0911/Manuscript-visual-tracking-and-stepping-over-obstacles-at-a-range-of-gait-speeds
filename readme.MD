@@ -16,11 +16,11 @@ and obstacle avoidance in projected virtual reality.
 | `Computer_vision_model/` | Video-based tracking/pose estimation used for obstacle-stepping kinematics |
 | `Figure_generation/` | Scripts to reproduce the manuscript's main and supplementary figures |
 
-## Requirements
-<!-- e.g. MATLAB version + toolboxes, or Python version + requirements.txt -->
 
-## Usage
-<!-- brief run order, e.g. "Run EEG_data_cleaning before Figure_generation" -->
+<!-- ## Requirements  e.g. MATLAB version + toolboxes, or Python version + requirements.txt -->
+
+
+<!--  ## Usage brief run order, e.g. "Run EEG_data_cleaning before Figure_generation" -->
 
 ## Contact
 Yu-Po Cheng, PhD — yupo.cheng@utexas.edu
