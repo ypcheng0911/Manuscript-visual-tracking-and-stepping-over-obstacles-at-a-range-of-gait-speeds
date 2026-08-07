@@ -1,0 +1,1 @@
+This is the code repository of the manuscript: Coordinated human electrocortical spectral power dynamics and eye gaze fixation during visual tracking and stepping over obstacles at a range of gait speeds.
