@@ -9,7 +9,7 @@
 % Read output from Gather_detection_results.ipynb 
 % and generate verification figures of gaze timing
 
-cd('E:\Nordin_lab_data\Processed_data\Obstacle_avoidance\Eye_tracking_videos\All_vars')
+cd('<path_to_processed_data>\Eye_tracking_videos\All_vars')
 
 % f = dir('N01*.mat');
 f = dir('D05*upsample*.mat');
